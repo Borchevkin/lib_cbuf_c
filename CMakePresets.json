@@ -1,0 +1,33 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "config_preset_debug",
+            "displayName": "GCC 14.1.1 x86_64-redhat-linux",
+            "description": "Using compilers: C = /usr/bin/gcc, CXX = /usr/bin/g++",
+            "binaryDir": "${sourceDir}/artifacts/build/debug",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/artifacts/build/install/debug",
+                "CMAKE_C_COMPILER": "/usr/bin/gcc",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "build_preset_debug",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "config_preset_debug"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "test_preset_debug",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "config_preset_debug"
+        }
+    ]
+}

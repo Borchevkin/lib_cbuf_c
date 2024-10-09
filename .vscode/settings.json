@@ -1,0 +1,8 @@
+{
+  "testMate.cpp.test.advancedExecutables": [
+    {
+      "pattern": "./artifacts/build/debug/**/*{test,Test,TEST}*",
+      "cwd": "${absDirpath}",
+    }
+  ]
+}
